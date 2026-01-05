@@ -6,73 +6,70 @@
 <title>Digital Seva Kendra | Assam</title>
 
 <style>
-:root{
-  --primary:#0d6efd;
-  --bg:#f4f7fb;
-}
 body{
   margin:0;
   font-family:Segoe UI, Arial, sans-serif;
-  background:var(--bg);
+  background:#f4f7fb;
 }
 
 /* HEADER */
 header{
-  background:linear-gradient(135deg,#0d6efd,#084298);
+  background:#0d6efd;
   color:#fff;
-  padding:25px;
+  padding:20px;
   text-align:center;
 }
+header h1{margin:0;}
+header p{margin:5px 0 0;}
+
+/* NAVIGATION */
 nav{
-  margin-top:15px;
+  background:#084298;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 }
 nav a{
   color:#fff;
   text-decoration:none;
-  margin:0 12px;
+  padding:12px 15px;
   font-weight:600;
 }
 nav a:hover{
-  text-decoration:underline;
+  background:#0d6efd;
 }
 
-/* CONTENT */
+/* CONTAINER */
 .container{
   max-width:1100px;
   margin:auto;
-  padding:40px 20px;
+  padding:30px;
 }
-.section-title{
-  text-align:center;
-  color:#0d6efd;
-  margin-bottom:30px;
-}
+
+/* SERVICES GRID */
 .services{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
+  gap:20px;
 }
 .card{
   background:#fff;
   padding:25px;
-  border-radius:16px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.08);
-  transition:.2s;
-}
-.card:hover{
-  transform:translateY(-5px);
+  border-radius:15px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.08);
+  text-align:center;
 }
 .card h3{
   color:#0d6efd;
 }
-.card p{
-  color:#333;
-}
-
-/* remove link style */
-.service-link{
+.card a{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 20px;
+  background:#0d6efd;
+  color:#fff;
   text-decoration:none;
-  color:inherit;
+  border-radius:20px;
 }
 
 /* FOOTER */
@@ -81,20 +78,21 @@ footer{
   color:#fff;
   text-align:center;
   padding:15px;
+  margin-top:30px;
 }
 
-/* FLOATING WHATSAPP */
+/* WHATSAPP FLOAT */
 .wa-float{
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
   color:#fff;
-  font-size:26px;
+  font-size:28px;
   padding:14px 16px;
   border-radius:50%;
   text-decoration:none;
-  box-shadow:0 4px 10px rgba(0,0,0,.3);
+  box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 </style>
 </head>
@@ -103,82 +101,69 @@ footer{
 
 <header>
   <h1>Digital Seva Kendra</h1>
-  <p>Government & Online Services Assistance – Assam</p>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="charges.html">Charges</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <p>Government & Online Services – Assam</p>
 </header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="pan.html">PAN</a>
+  <a href="passport.html">Passport</a>
+  <a href="birth.html">Birth</a>
+  <a href="death.html">Death</a>
+  <a href="bill.html">Bill</a>
+  <a href="charges.html">Charges</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
 <div class="container">
 
-  <h2 class="section-title">Our Services</h2>
+<h2 style="text-align:center;">Our Services</h2>
 
-  <div class="services">
+<div class="services">
 
-    <!-- PAN -->
-    <a href="pan.html" class="service-link">
-      <div class="card">
-        <h3>PAN Card</h3>
-        <p>
-          New – ₹250<br>
-          Correction – ₹180
-        </p>
-      </div>
-    </a>
-
-    <!-- Passport -->
-    <a href="passport.html" class="service-link">
-      <div class="card">
-        <h3>Passport</h3>
-        <p>
-          New – ₹1000<br>
-          Renewal – ₹850
-        </p>
-      </div>
-    </a>
-
-    <!-- Birth -->
-    <a href="birth.html" class="service-link">
-      <div class="card">
-        <h3>Birth Certificate</h3>
-        <p>₹550</p>
-      </div>
-    </a>
-
-    <!-- Death -->
-    <a href="death.html" class="service-link">
-      <div class="card">
-        <h3>Death Certificate</h3>
-        <p>₹600</p>
-      </div>
-    </a>
-
-    <!-- Income / Caste -->
-    <a href="certificates.html" class="service-link">
-      <div class="card">
-        <h3>Income / Caste Certificate</h3>
-        <p>₹300 – ₹450</p>
-      </div>
-    </a>
-
-    <!-- Bill -->
-    <a href="bill.html" class="service-link">
-      <div class="card">
-        <h3>Bill Payment</h3>
-        <p>₹30 – ₹100</p>
-      </div>
-    </a>
-
+  <div class="card">
+    <h3>PAN Card</h3>
+    <p>New PAN & Correction</p>
+    <a href="pan.html">View</a>
   </div>
+
+  <div class="card">
+    <h3>Passport</h3>
+    <p>New / Renewal</p>
+    <a href="passport.html">View</a>
+  </div>
+
+  <div class="card">
+    <h3>Birth Certificate</h3>
+    <p>Online application assistance</p>
+    <a href="birth.html">View</a>
+  </div>
+
+  <div class="card">
+    <h3>Death Certificate</h3>
+    <p>Official registration support</p>
+    <a href="death.html">View</a>
+  </div>
+
+  <div class="card">
+    <h3>Bill Payments</h3>
+    <p>Electricity, Mobile, DTH</p>
+    <a href="bill.html">View</a>
+  </div>
+
+  <div class="card">
+    <h3>Service Charges</h3>
+    <p>Transparent pricing</p>
+    <a href="charges.html">View</a>
+  </div>
+
+</div>
+
 </div>
 
 <footer>
-  © 2026 Digital Seva Kendra, Assam
+© Digital Seva Kendra | Assam
 </footer>
 
 <a href="https://wa.me/918638274755" class="wa-float">💬</a>
