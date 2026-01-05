@@ -85,7 +85,7 @@ tr:hover{
 .note{
   margin-top:25px;
   background:#fff;
-  padding:20px;
+  padding:22px;
   border-radius:10px;
   box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
@@ -99,11 +99,30 @@ tr:hover{
   display:inline-block;
   margin-top:15px;
   padding:10px 22px;
-  background:var(--primary);
+  background:#25D366;
   color:#fff;
   text-decoration:none;
   border-radius:22px;
   font-weight:600;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  text-decoration:none;
+  box-shadow:0 6px 16px rgba(0,0,0,0.3);
+  z-index:999;
 }
 
 /* FOOTER */
@@ -120,7 +139,7 @@ footer{
 
 <header>
   <h1>Service Charges</h1>
-  <p>Transparent & Affordable Pricing</p>
+  <p>Transparent & Professional Pricing</p>
 </header>
 
 <nav>
@@ -146,53 +165,53 @@ footer{
         <tr>
           <td>PAN Card</td>
           <td>New Application</td>
-          <td>₹150</td>
+          <td>₹250</td>
         </tr>
         <tr>
           <td>PAN Card</td>
           <td>Correction / Update</td>
-          <td>₹120</td>
+          <td>₹180</td>
         </tr>
         <tr>
           <td>Passport</td>
           <td>New Passport</td>
-          <td>₹500</td>
+          <td>₹1000</td>
         </tr>
         <tr>
           <td>Passport</td>
-          <td>Re-Issue / Renewal</td>
-          <td>₹450</td>
+          <td>Renewal / Re-Issue</td>
+          <td>₹850</td>
         </tr>
         <tr>
           <td>Birth Certificate</td>
           <td>New / Correction</td>
-          <td>₹200</td>
+          <td>₹550</td>
         </tr>
         <tr>
           <td>Death Certificate</td>
           <td>New / Correction</td>
-          <td>₹200</td>
+          <td>₹600</td>
         </tr>
         <tr>
-          <td>Income / Caste / Residence</td>
-          <td>Certificate</td>
-          <td>₹250</td>
+          <td>Income / Caste Certificate</td>
+          <td>Application</td>
+          <td>₹300 – ₹450</td>
         </tr>
         <tr>
           <td>Bill Payment / Recharge</td>
-          <td>Utility Services</td>
-          <td>₹30 – ₹50</td>
+          <td>Electricity, Mobile, DTH etc.</td>
+          <td>₹30 – ₹100</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <div class="note">
-    <p><strong>Note:</strong></p>
+    <p><strong>Important Notes:</strong></p>
     <ul>
-      <li>Government fees (if any) are extra.</li>
-      <li>Charges may vary depending on case complexity.</li>
-      <li>Express service available on request.</li>
+      <li>Government fees (if applicable) are extra.</li>
+      <li>Charges may vary based on document availability & urgency.</li>
+      <li>Express / urgent services available on request.</li>
     </ul>
     <a class="btn" href="https://wa.me/918638274755" target="_blank">
       Contact on WhatsApp
@@ -204,6 +223,11 @@ footer{
 <footer>
   © 2026 Digital Seva Kendra, Guwahati
 </footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/918638274755" class="whatsapp-float" target="_blank">
+  💬
+</a>
 
 </body>
 </html>
