@@ -1,35 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Service Charges | Digital Seva Kendra</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-body{font-family:Segoe UI;background:#f4f7fb;margin:0}
-header{background:#6f42c1;color:#fff;padding:40px;text-align:center}
-section{max-width:800px;margin:auto;padding:30px}
-table{width:100%;border-collapse:collapse;background:#fff}
-th,td{padding:14px;border-bottom:1px solid #ddd;text-align:left}
-th{background:#6f42c1;color:#fff}
-.back{display:inline-block;margin-top:20px;color:#6f42c1;text-decoration:none}
+:root{
+  --primary:#0d6efd;
+  --dark:#0b3c78;
+  --light:#f4f7fb;
+}
+
+body{
+  margin:0;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:var(--light);
+  color:#333;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg, var(--primary), var(--dark));
+  color:#fff;
+  padding:50px 20px;
+  text-align:center;
+}
+
+/* NAV */
+nav{
+  background:#fff;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+nav a{
+  padding:14px 22px;
+  text-decoration:none;
+  color:#333;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:var(--primary);
+}
+
+/* SECTION */
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.table-card{
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  overflow-x:auto;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td{
+  padding:14px 16px;
+  border-bottom:1px solid #eee;
+  text-align:left;
+}
+
+th{
+  background:var(--primary);
+  color:#fff;
+}
+
+tr:hover{
+  background:#f9fbff;
+}
+
+/* NOTE */
+.note{
+  margin-top:25px;
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.note strong{
+  color:var(--primary);
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:10px 22px;
+  background:var(--primary);
+  color:#fff;
+  text-decoration:none;
+  border-radius:22px;
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:18px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>Service Charges</h1>
+  <h1>Service Charges</h1>
+  <p>Transparent & Affordable Pricing</p>
 </header>
 
-<section>
-<table>
-<tr><th>Service</th><th>Charge (₹)</th></tr>
-<tr><td>PAN Card</td><td>---</td></tr>
-<tr><td>Passport</td><td>---</td></tr>
-<tr><td>Birth Certificate</td><td>---</td></tr>
-<tr><td>Death Certificate</td><td>---</td></tr>
-</table>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="pan.html">PAN Card</a>
+  <a href="passport.html">Passport</a>
+  <a href="certificates.html">Certificates</a>
+  <a href="charges.html">Service Charges</a>
+</nav>
 
-<a class="back" href="index.html">← Back to Home</a>
+<section>
+
+  <div class="table-card">
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Type</th>
+          <th>Charges (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PAN Card</td>
+          <td>New Application</td>
+          <td>₹150</td>
+        </tr>
+        <tr>
+          <td>PAN Card</td>
+          <td>Correction / Update</td>
+          <td>₹120</td>
+        </tr>
+        <tr>
+          <td>Passport</td>
+          <td>New Passport</td>
+          <td>₹500</td>
+        </tr>
+        <tr>
+          <td>Passport</td>
+          <td>Re-Issue / Renewal</td>
+          <td>₹450</td>
+        </tr>
+        <tr>
+          <td>Birth Certificate</td>
+          <td>New / Correction</td>
+          <td>₹200</td>
+        </tr>
+        <tr>
+          <td>Death Certificate</td>
+          <td>New / Correction</td>
+          <td>₹200</td>
+        </tr>
+        <tr>
+          <td>Income / Caste / Residence</td>
+          <td>Certificate</td>
+          <td>₹250</td>
+        </tr>
+        <tr>
+          <td>Bill Payment / Recharge</td>
+          <td>Utility Services</td>
+          <td>₹30 – ₹50</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <p><strong>Note:</strong></p>
+    <ul>
+      <li>Government fees (if any) are extra.</li>
+      <li>Charges may vary depending on case complexity.</li>
+      <li>Express service available on request.</li>
+    </ul>
+    <a class="btn" href="https://wa.me/918638274755" target="_blank">
+      Contact on WhatsApp
+    </a>
+  </div>
+
 </section>
+
+<footer>
+  © 2026 Digital Seva Kendra, Guwahati
+</footer>
 
 </body>
 </html>
+
