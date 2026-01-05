@@ -14,23 +14,17 @@ body{
   margin:0;
   font-family:Segoe UI, Arial, sans-serif;
   background:var(--bg);
-  color:#222;
 }
 
 /* HEADER */
 header{
   background:linear-gradient(135deg,#0d6efd,#084298);
   color:#fff;
-  padding:30px 20px 20px;
+  padding:25px;
   text-align:center;
-  position:relative;
 }
-header h1{margin:0;font-size:2.2rem;}
-header p{margin:8px 0 0;}
-
-/* NAV */
 nav{
-  margin-top:20px;
+  margin-top:15px;
 }
 nav a{
   color:#fff;
@@ -42,49 +36,43 @@ nav a:hover{
   text-decoration:underline;
 }
 
-/* CONTAINER */
+/* CONTENT */
 .container{
   max-width:1100px;
   margin:auto;
-  padding:30px 20px;
+  padding:40px 20px;
 }
 .section-title{
   text-align:center;
-  color:var(--primary);
-  margin-bottom:25px;
+  color:#0d6efd;
+  margin-bottom:30px;
 }
-
-/* GRID & CARD */
-.grid{
+.services{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
 }
 .card{
   background:#fff;
   padding:25px;
   border-radius:16px;
   box-shadow:0 8px 20px rgba(0,0,0,0.08);
+  transition:.2s;
 }
-.card h3{margin-top:0;color:var(--primary);}
+.card:hover{
+  transform:translateY(-5px);
+}
+.card h3{
+  color:#0d6efd;
+}
+.card p{
+  color:#333;
+}
 
-/* BUTTON */
-.btn{
-  display:inline-block;
-  margin-top:12px;
-  padding:10px 18px;
-  background:var(--primary);
-  color:#fff;
-  border-radius:20px;
+/* remove link style */
+.service-link{
   text-decoration:none;
-  font-weight:600;
-}
-
-/* FAQ */
-details summary{
-  cursor:pointer;
-  font-weight:600;
-  margin-bottom:6px;
+  color:inherit;
 }
 
 /* FOOTER */
@@ -93,7 +81,6 @@ footer{
   color:#fff;
   text-align:center;
   padding:15px;
-  font-size:14px;
 }
 
 /* FLOATING WHATSAPP */
@@ -108,7 +95,6 @@ footer{
   border-radius:50%;
   text-decoration:none;
   box-shadow:0 4px 10px rgba(0,0,0,.3);
-  z-index:999;
 }
 </style>
 </head>
@@ -121,70 +107,78 @@ footer{
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="#services">Services</a>
-    <a href="#charges">Charges</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
+    <a href="services.html">Services</a>
+    <a href="charges.html">Charges</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <div class="container">
 
-  <!-- SERVICES -->
-  <h2 id="services" class="section-title">Our Services</h2>
-  <div class="grid">
-    <div class="card"><h3>PAN Card</h3><p>New – ₹250<br>Correction – ₹180</p></div>
-    <div class="card"><h3>Passport</h3><p>New – ₹1000<br>Renewal – ₹850</p></div>
-    <div class="card"><h3>Birth Certificate</h3><p>₹550</p></div>
-    <div class="card"><h3>Death Certificate</h3><p>₹600</p></div>
-    <div class="card"><h3>Income / Caste Certificate</h3><p>₹300 – ₹450</p></div>
-    <div class="card"><h3>Bill Payment</h3><p>₹30 – ₹100</p></div>
-  </div>
+  <h2 class="section-title">Our Services</h2>
 
-  <!-- CHARGES -->
-  <h2 id="charges" class="section-title">Professional Service Charges</h2>
-  <div class="card">
-    <ul>
-      <li>PAN New – ₹250</li>
-      <li>PAN Correction – ₹180</li>
-      <li>Passport New – ₹1000</li>
-      <li>Passport Renewal – ₹850</li>
-      <li>Birth Certificate – ₹550</li>
-      <li>Death Certificate – ₹600</li>
-      <li>Income / Caste Certificate – ₹300 to ₹450</li>
-      <li>Bill Payments – ₹30 to ₹100</li>
-    </ul>
-  </div>
+  <div class="services">
 
-  <!-- FAQ -->
-  <h2 id="faq" class="section-title">Frequently Asked Questions</h2>
-  <div class="card">
-    <details>
-      <summary>Do I need to apply online myself?</summary>
-      <p>No. We complete the entire process on your behalf.</p>
-    </details>
-    <details>
-      <summary>How long does PAN card processing take?</summary>
-      <p>Usually 7–10 working days.</p>
-    </details>
-    <details>
-      <summary>Do you support WhatsApp enquiries?</summary>
-      <p>Yes. WhatsApp support is available.</p>
-    </details>
-  </div>
+    <!-- PAN -->
+    <a href="pan.html" class="service-link">
+      <div class="card">
+        <h3>PAN Card</h3>
+        <p>
+          New – ₹250<br>
+          Correction – ₹180
+        </p>
+      </div>
+    </a>
 
-  <!-- CONTACT -->
-  <h2 id="contact" class="section-title">Contact Us</h2>
-  <div class="card" style="text-align:center;">
-    <p>📍 Digital Seva Kendra, Assam</p>
-    <p>📞 WhatsApp: 8638274755</p>
-    <a href="https://wa.me/918638274755" class="btn">Chat on WhatsApp</a>
-  </div>
+    <!-- Passport -->
+    <a href="passport.html" class="service-link">
+      <div class="card">
+        <h3>Passport</h3>
+        <p>
+          New – ₹1000<br>
+          Renewal – ₹850
+        </p>
+      </div>
+    </a>
 
+    <!-- Birth -->
+    <a href="birth.html" class="service-link">
+      <div class="card">
+        <h3>Birth Certificate</h3>
+        <p>₹550</p>
+      </div>
+    </a>
+
+    <!-- Death -->
+    <a href="death.html" class="service-link">
+      <div class="card">
+        <h3>Death Certificate</h3>
+        <p>₹600</p>
+      </div>
+    </a>
+
+    <!-- Income / Caste -->
+    <a href="certificates.html" class="service-link">
+      <div class="card">
+        <h3>Income / Caste Certificate</h3>
+        <p>₹300 – ₹450</p>
+      </div>
+    </a>
+
+    <!-- Bill -->
+    <a href="bill.html" class="service-link">
+      <div class="card">
+        <h3>Bill Payment</h3>
+        <p>₹30 – ₹100</p>
+      </div>
+    </a>
+
+  </div>
 </div>
 
 <footer>
-  © 2026 Digital Seva Kendra | All Rights Reserved
+  © 2026 Digital Seva Kendra, Assam
 </footer>
 
 <a href="https://wa.me/918638274755" class="wa-float">💬</a>
