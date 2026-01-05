@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Seva Kendra | Government Services</title>
+<title>Digital Seva Kendra | Assam</title>
 
 <style>
 :root{
@@ -12,32 +12,37 @@
 }
 body{
   margin:0;
-  font-family:Segoe UI, Arial;
+  font-family:Segoe UI, Arial, sans-serif;
   background:var(--bg);
   color:#222;
 }
+
+/* HEADER */
 header{
   background:linear-gradient(135deg,#0d6efd,#084298);
   color:#fff;
-  padding:50px 20px;
+  padding:30px 20px 20px;
   text-align:center;
   position:relative;
 }
 header h1{margin:0;font-size:2.2rem;}
-header p{margin-top:10px;font-size:1.1rem;}
+header p{margin:8px 0 0;}
 
-.top-btn{
-  position:absolute;
-  top:20px;
-  right:20px;
-  background:#fff;
-  color:#0d6efd;
-  padding:8px 16px;
-  border-radius:20px;
+/* NAV */
+nav{
+  margin-top:20px;
+}
+nav a{
+  color:#fff;
   text-decoration:none;
+  margin:0 12px;
   font-weight:600;
 }
+nav a:hover{
+  text-decoration:underline;
+}
 
+/* CONTAINER */
 .container{
   max-width:1100px;
   margin:auto;
@@ -45,10 +50,11 @@ header p{margin-top:10px;font-size:1.1rem;}
 }
 .section-title{
   text-align:center;
+  color:var(--primary);
   margin-bottom:25px;
-  color:#0d6efd;
 }
 
+/* GRID & CARD */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -60,8 +66,9 @@ header p{margin-top:10px;font-size:1.1rem;}
   border-radius:16px;
   box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
-.card h3{margin-top:0;}
+.card h3{margin-top:0;color:var(--primary);}
 
+/* BUTTON */
 .btn{
   display:inline-block;
   margin-top:12px;
@@ -73,13 +80,14 @@ header p{margin-top:10px;font-size:1.1rem;}
   font-weight:600;
 }
 
-ul{padding-left:18px;}
+/* FAQ */
 details summary{
   cursor:pointer;
   font-weight:600;
   margin-bottom:6px;
 }
 
+/* FOOTER */
 footer{
   background:#0d6efd;
   color:#fff;
@@ -88,7 +96,7 @@ footer{
   font-size:14px;
 }
 
-/* Floating WhatsApp */
+/* FLOATING WHATSAPP */
 .wa-float{
   position:fixed;
   bottom:20px;
@@ -100,6 +108,7 @@ footer{
   border-radius:50%;
   text-decoration:none;
   box-shadow:0 4px 10px rgba(0,0,0,.3);
+  z-index:999;
 }
 </style>
 </head>
@@ -107,43 +116,75 @@ footer{
 <body>
 
 <header>
-  <a href="https://wa.me/918638274755" class="top-btn">WhatsApp</a>
   <h1>Digital Seva Kendra</h1>
   <p>Government & Online Services Assistance – Assam</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#services">Services</a>
+    <a href="#charges">Charges</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <div class="container">
 
-  <h2 class="section-title">Our Services</h2>
+  <!-- SERVICES -->
+  <h2 id="services" class="section-title">Our Services</h2>
   <div class="grid">
-    <div class="card"><h3>PAN Card</h3><p>New & Correction</p></div>
-    <div class="card"><h3>Passport</h3><p>New / Renewal</p></div>
-    <div class="card"><h3>Birth Certificate</h3></div>
-    <div class="card"><h3>Death Certificate</h3></div>
-    <div class="card"><h3>Income / Caste</h3></div>
-    <div class="card"><h3>Bill Payments</h3></div>
+    <div class="card"><h3>PAN Card</h3><p>New – ₹250<br>Correction – ₹180</p></div>
+    <div class="card"><h3>Passport</h3><p>New – ₹1000<br>Renewal – ₹850</p></div>
+    <div class="card"><h3>Birth Certificate</h3><p>₹550</p></div>
+    <div class="card"><h3>Death Certificate</h3><p>₹600</p></div>
+    <div class="card"><h3>Income / Caste Certificate</h3><p>₹300 – ₹450</p></div>
+    <div class="card"><h3>Bill Payment</h3><p>₹30 – ₹100</p></div>
   </div>
 
-  <h2 class="section-title">Why Choose Us</h2>
+  <!-- CHARGES -->
+  <h2 id="charges" class="section-title">Professional Service Charges</h2>
   <div class="card">
     <ul>
-      <li>Complete form filling & submission</li>
-      <li>Assam government portal experience</li>
-      <li>Transparent service charges</li>
-      <li>WhatsApp support available</li>
+      <li>PAN New – ₹250</li>
+      <li>PAN Correction – ₹180</li>
+      <li>Passport New – ₹1000</li>
+      <li>Passport Renewal – ₹850</li>
+      <li>Birth Certificate – ₹550</li>
+      <li>Death Certificate – ₹600</li>
+      <li>Income / Caste Certificate – ₹300 to ₹450</li>
+      <li>Bill Payments – ₹30 to ₹100</li>
     </ul>
   </div>
 
-  <h2 class="section-title">FAQ</h2>
+  <!-- FAQ -->
+  <h2 id="faq" class="section-title">Frequently Asked Questions</h2>
   <div class="card">
-    <details><summary>Do I need internet knowledge?</summary><p>No, we handle everything.</p></details>
-    <details><summary>Is WhatsApp support available?</summary><p>Yes.</p></details>
+    <details>
+      <summary>Do I need to apply online myself?</summary>
+      <p>No. We complete the entire process on your behalf.</p>
+    </details>
+    <details>
+      <summary>How long does PAN card processing take?</summary>
+      <p>Usually 7–10 working days.</p>
+    </details>
+    <details>
+      <summary>Do you support WhatsApp enquiries?</summary>
+      <p>Yes. WhatsApp support is available.</p>
+    </details>
+  </div>
+
+  <!-- CONTACT -->
+  <h2 id="contact" class="section-title">Contact Us</h2>
+  <div class="card" style="text-align:center;">
+    <p>📍 Digital Seva Kendra, Assam</p>
+    <p>📞 WhatsApp: 8638274755</p>
+    <a href="https://wa.me/918638274755" class="btn">Chat on WhatsApp</a>
   </div>
 
 </div>
 
 <footer>
-  © 2026 Digital Seva Kendra
+  © 2026 Digital Seva Kendra | All Rights Reserved
 </footer>
 
 <a href="https://wa.me/918638274755" class="wa-float">💬</a>
