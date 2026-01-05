@@ -1,38 +1,167 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Certificates | Digital Seva Kendra</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-body{font-family:Segoe UI;background:#f4f7fb;margin:0}
-header{background:#0dcaf0;color:#000;padding:40px;text-align:center}
-section{max-width:900px;margin:auto;padding:30px}
-.card{background:#fff;padding:25px;border-radius:12px;margin-bottom:20px}
-.btn{background:#0dcaf0;padding:10px 18px;border-radius:20px;text-decoration:none;color:#000}
-.back{display:inline-block;margin-top:20px}
+:root{
+  --primary:#0d6efd;
+  --dark:#0b3c78;
+  --light:#f4f7fb;
+}
+
+body{
+  margin:0;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:var(--light);
+  color:#333;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg, var(--primary), var(--dark));
+  color:#fff;
+  padding:50px 20px;
+  text-align:center;
+}
+
+/* NAVIGATION */
+nav{
+  background:#fff;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+nav a{
+  padding:14px 22px;
+  text-decoration:none;
+  color:#333;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:var(--primary);
+}
+
+/* SECTION */
+section{
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.card{
+  background:#fff;
+  padding:25px;
+  margin-bottom:25px;
+  border-radius:12px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+
+.card h2{
+  color:var(--primary);
+}
+
+.btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 20px;
+  background:var(--primary);
+  color:#fff;
+  text-decoration:none;
+  border-radius:22px;
+  font-weight:600;
+}
+
+.btn:hover{
+  opacity:0.9;
+}
+
+.back{
+  display:inline-block;
+  margin-top:10px;
+  text-decoration:none;
+  color:var(--primary);
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:18px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>Birth & Death Certificates</h1>
+  <h1>Certificate Services</h1>
+  <p>Digital Seva Kendra – Guwahati</p>
 </header>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="pan.html">PAN Card</a>
+  <a href="passport.html">Passport</a>
+  <a href="certificates.html">Certificates</a>
+  <a href="charges.html">Service Charges</a>
+</nav>
+
 <section>
-<div class="card">
-<h2>👶 Birth Certificate</h2>
-<p>Application & correction support.</p>
-<a class="btn" href="https://wa.me/918638274755">Apply</a>
-</div>
 
-<div class="card">
-<h2>⚰️ Death Certificate</h2>
-<p>Registration and correction services.</p>
-<a class="btn" href="https://wa.me/918638274755">Apply</a>
-</div>
+  <div class="card">
+    <h2>👶 Birth Certificate</h2>
+    <p>Apply for new birth certificate or correction with full guidance.</p>
+    <p><strong>Required Documents:</strong></p>
+    <ul>
+      <li>Hospital Discharge Slip</li>
+      <li>Parents Aadhaar Card</li>
+      <li>Address Proof</li>
+    </ul>
+    <a class="btn" href="https://wa.me/918638274755" target="_blank">
+      Apply on WhatsApp
+    </a>
+  </div>
 
-<a class="back" href="index.html">← Back to Home</a>
+  <div class="card">
+    <h2>⚰️ Death Certificate</h2>
+    <p>Online application & correction support for death certificate.</p>
+    <p><strong>Required Documents:</strong></p>
+    <ul>
+      <li>Hospital / Doctor Certificate</li>
+      <li>Aadhaar Card of Applicant</li>
+      <li>Address Proof</li>
+    </ul>
+    <a class="btn" href="https://wa.me/918638274755" target="_blank">
+      Request Certificate
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>📄 Other Certificates</h2>
+    <p>
+      Income Certificate, Caste Certificate, Residence Certificate and more.
+    </p>
+    <a class="btn" href="https://wa.me/918638274755" target="_blank">
+      Enquire on WhatsApp
+    </a>
+  </div>
+
+  <a class="back" href="index.html">← Back to Home</a>
+
 </section>
+
+<footer>
+  © 2026 Digital Seva Kendra, Guwahati
+</footer>
 
 </body>
 </html>
