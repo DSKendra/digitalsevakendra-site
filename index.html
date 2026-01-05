@@ -3,46 +3,168 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Seva Kendra - Guwahati</title>
+<title>Digital Seva Kendra | Guwahati</title>
+
 <style>
-body{margin:0;font-family:Arial;background:#f4f4f4}
-header{background:#0073e6;color:#fff;padding:50px;text-align:center}
-nav{background:#005bb5;text-align:center}
-nav a{color:#fff;padding:14px 18px;display:inline-block;text-decoration:none}
-section{padding:30px;max-width:1000px;margin:auto}
-.card{background:#fff;padding:20px;margin:10px 0;border-radius:8px}
-footer{background:#0073e6;color:#fff;text-align:center;padding:15px}
+:root{
+  --primary:#0d6efd;
+  --dark:#0b3c78;
+  --light:#f4f7fb;
+}
+
+body{
+  margin:0;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:var(--light);
+  color:#333;
+}
+
+header{
+  background:linear-gradient(135deg,var(--primary),var(--dark));
+  color:#fff;
+  padding:70px 20px;
+  text-align:center;
+}
+
+header h1{margin:0;font-size:2.4em;}
+header p{font-size:1.1em;}
+
+nav{
+  background:#fff;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  display:flex;
+  justify-content:center;
+}
+
+nav a{
+  padding:14px 22px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+
+nav a:hover{color:var(--primary);}
+
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:22px;
+}
+
+.service-box{
+  background:#fff;
+  border-radius:12px;
+  padding:25px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+
+.service-box h3{color:var(--primary);}
+
+.service-box a{
+  text-decoration:none;
+  color:var(--primary);
+  font-weight:600;
+}
+
+.contact{
+  background:#fff;
+  border-radius:12px;
+  padding:30px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  text-align:center;
+}
+
+.whatsapp{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 22px;
+  background:#25D366;
+  color:#fff;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+footer{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:18px;
+}
 </style>
 </head>
 
 <body>
+
 <header>
-<h1>Digital Seva Kendra – Guwahati</h1>
-<p>Online Government & Citizen Services</p>
+  <h1>Digital Seva Kendra</h1>
+  <p>Trusted Online Citizen Services – Guwahati</p>
 </header>
 
 <nav>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <section id="services">
-<h2>Services</h2>
-<div class="card">PAN Card Application</div>
-<div class="card">Income Certificate</div>
-<div class="card">Birth & Death Certificate</div>
-<div class="card">Passport Application</div>
-<div class="card">Bill Payment & Recharge</div>
+  <div class="section-title">
+    <h2>Our Services</h2>
+    <p>Select a service to continue</p>
+  </div>
+
+  <div class="services">
+    <div class="service-box">
+      <h3>PAN Card Services</h3>
+      <p>New PAN & PAN correction services.</p>
+      <a href="pan.html">View Options →</a>
+    </div>
+
+    <div class="service-box">
+      <h3>Income Certificate</h3>
+      <p>Online application assistance.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Birth / Death Certificate</h3>
+      <p>Application & tracking support.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Passport Application</h3>
+      <p>New passport & appointment support.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Bill Payment & Recharge</h3>
+      <p>Electricity, mobile, DTH & utilities.</p>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
-<p><b>Phone:</b> 8638274755</p>
-<p><b>Location:</b> Guwahati, Assam</p>
+  <div class="contact">
+    <p><strong>📍 Location:</strong> Guwahati, Assam</p>
+    <p><strong>📞 Phone:</strong> 8638274755</p>
+    <a class="whatsapp" href="https://wa.me/918638274755" target="_blank">
+      Chat on WhatsApp
+    </a>
+  </div>
 </section>
 
 <footer>
-© 2026 Digital Seva Kendra – Guwahati
+  © 2026 Digital Seva Kendra, Guwahati
 </footer>
+
 </body>
 </html>
