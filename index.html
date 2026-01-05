@@ -27,7 +27,7 @@ header{
   text-align:center;
 }
 
-/* NAV */
+/* NAVBAR */
 nav{
   background:#fff;
   box-shadow:0 4px 10px rgba(0,0,0,0.08);
@@ -47,7 +47,7 @@ nav a:hover{
   color:var(--primary);
 }
 
-/* SECTIONS */
+/* SECTION */
 section{
   max-width:1100px;
   margin:auto;
@@ -59,7 +59,7 @@ section{
   margin-bottom:35px;
 }
 
-/* SERVICES GRID */
+/* SERVICES */
 .services{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
@@ -105,6 +105,25 @@ section{
   font-weight:600;
 }
 
+/* FLOATING WHATSAPP */
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  text-decoration:none;
+  box-shadow:0 6px 16px rgba(0,0,0,0.3);
+  z-index:999;
+}
+
 /* FOOTER */
 footer{
   background:var(--dark);
@@ -130,7 +149,7 @@ footer{
   <a href="charges.html">Service Charges</a>
 </nav>
 
-<section id="services">
+<section>
   <div class="section-title">
     <h2>Our Services</h2>
     <p>Select a service to continue</p>
@@ -139,31 +158,31 @@ footer{
   <div class="services">
     <div class="service-box">
       <h3>PAN Card Services</h3>
-      <p>New PAN & PAN correction services.</p>
+      <p>New PAN card & corrections.</p>
       <a href="pan.html">View Options →</a>
     </div>
 
     <div class="service-box">
       <h3>Passport Services</h3>
-      <p>New passport & reissue assistance.</p>
+      <p>New passport & reissue.</p>
       <a href="passport.html">View Options →</a>
     </div>
 
     <div class="service-box">
       <h3>Birth / Death Certificates</h3>
-      <p>Application & tracking support.</p>
+      <p>Apply & correction support.</p>
       <a href="certificates.html">View Options →</a>
     </div>
 
     <div class="service-box">
       <h3>Service Charges</h3>
-      <p>Transparent pricing for all services.</p>
+      <p>Transparent pricing.</p>
       <a href="charges.html">View Charges →</a>
     </div>
   </div>
 </section>
 
-<section id="contact">
+<section>
   <div class="contact">
     <p><strong>📍 Location:</strong> Guwahati, Assam</p>
     <p><strong>📞 Phone:</strong> 8638274755</p>
@@ -177,6 +196,10 @@ footer{
   © 2026 Digital Seva Kendra, Guwahati
 </footer>
 
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/918638274755" class="whatsapp-float" target="_blank">
+  💬
+</a>
+
 </body>
 </html>
-
