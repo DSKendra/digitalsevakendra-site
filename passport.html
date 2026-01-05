@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,4 +15,144 @@
 body{
   margin:0;
   font-family:Segoe UI, Arial, sans-serif;
-  background:var(--light)
+  background:var(--light);
+  color:#333;
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg, var(--primary), var(--dark));
+  color:#fff;
+  padding:50px 20px;
+  text-align:center;
+}
+
+/* NAV */
+nav{
+  background:#fff;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+nav a{
+  padding:14px 22px;
+  text-decoration:none;
+  color:#333;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:var(--primary);
+}
+
+/* SECTION */
+section{
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.card{
+  background:#fff;
+  padding:25px;
+  margin-bottom:25px;
+  border-radius:12px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+}
+
+.card h2{
+  color:var(--primary);
+}
+
+.btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 20px;
+  background:var(--primary);
+  color:#fff;
+  text-decoration:none;
+  border-radius:22px;
+  font-weight:600;
+}
+
+.btn:hover{
+  opacity:0.9;
+}
+
+.back{
+  display:inline-block;
+  margin-top:10px;
+  text-decoration:none;
+  color:var(--primary);
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  background:var(--dark);
+  color:#fff;
+  text-align:center;
+  padding:18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Passport Services</h1>
+  <p>Digital Seva Kendra – Guwahati</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="pan.html">PAN Card</a>
+  <a href="passport.html">Passport</a>
+  <a href="certificates.html">Certificates</a>
+  <a href="charges.html">Service Charges</a>
+</nav>
+
+<section>
+
+  <div class="card">
+    <h2>🆕 New Passport Application</h2>
+    <p>Complete assistance for new passport application & appointment booking.</p>
+    <p><strong>Required Documents:</strong></p>
+    <ul>
+      <li>Aadhaar Card</li>
+      <li>PAN Card</li>
+      <li>Address Proof</li>
+      <li>Date of Birth Proof</li>
+    </ul>
+    <a class="btn" href="https://wa.me/918638274755" target="_blank">
+      Apply on WhatsApp
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>🔁 Passport Re-Issue / Renewal</h2>
+    <p>For expired passport, address change, name change or damaged passport.</p>
+    <p><strong>Required Documents:</strong></p>
+    <ul>
+      <li>Old Passport</li>
+      <li>Aadhaar Card</li>
+      <li>Supporting documents (if any change)</li>
+    </ul>
+    <a class="btn" href="https://wa.me/918638274755" target="_blank">
+      Request Re-Issue
+    </a>
+  </div>
+
+  <a class="back" href="index.html">← Back to Home</a>
+
+</section>
+
+<footer>
+  © 2026 Digital Seva Kendra, Guwahati
+</footer>
+
+</body>
+</html>
+
