@@ -3,133 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Seva Kendra | Guwahati</title>
+<title>Digital Seva Kendra | Government Services</title>
 
 <style>
 :root{
   --primary:#0d6efd;
-  --dark:#0b3c78;
-  --light:#f4f7fb;
+  --bg:#f4f7fb;
 }
-
 body{
   margin:0;
-  font-family:Segoe UI, Arial, sans-serif;
-  background:var(--light);
-  color:#333;
+  font-family:Segoe UI, Arial;
+  background:var(--bg);
+  color:#222;
 }
-
-/* HEADER */
 header{
-  background:linear-gradient(135deg, var(--primary), var(--dark));
+  background:linear-gradient(135deg,#0d6efd,#084298);
   color:#fff;
-  padding:60px 20px;
+  padding:50px 20px;
   text-align:center;
+  position:relative;
 }
+header h1{margin:0;font-size:2.2rem;}
+header p{margin-top:10px;font-size:1.1rem;}
 
-/* NAVBAR */
-nav{
+.top-btn{
+  position:absolute;
+  top:20px;
+  right:20px;
   background:#fff;
-  box-shadow:0 4px 10px rgba(0,0,0,0.08);
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-nav a{
-  padding:14px 22px;
+  color:#0d6efd;
+  padding:8px 16px;
+  border-radius:20px;
   text-decoration:none;
-  color:#333;
   font-weight:600;
 }
 
-nav a:hover{
-  color:var(--primary);
-}
-
-/* SECTION */
-section{
+.container{
   max-width:1100px;
   margin:auto;
-  padding:50px 20px;
+  padding:30px 20px;
 }
-
 .section-title{
   text-align:center;
-  margin-bottom:35px;
+  margin-bottom:25px;
+  color:#0d6efd;
 }
 
-/* SERVICES */
-.services{
+.grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-  gap:22px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
 }
-
-.service-box{
+.card{
   background:#fff;
-  border-radius:12px;
   padding:25px;
-  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  border-radius:16px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
+.card h3{margin-top:0;}
 
-.service-box h3{
-  color:var(--primary);
-}
-
-.service-box a{
+.btn{
   display:inline-block;
   margin-top:12px;
-  text-decoration:none;
-  color:var(--primary);
-  font-weight:600;
-}
-
-/* CONTACT */
-.contact{
-  background:#fff;
-  border-radius:12px;
-  padding:30px;
-  box-shadow:0 6px 16px rgba(0,0,0,0.08);
-  text-align:center;
-}
-
-.whatsapp{
-  display:inline-block;
-  margin-top:15px;
-  padding:12px 22px;
-  background:#25D366;
+  padding:10px 18px;
+  background:var(--primary);
   color:#fff;
-  border-radius:25px;
+  border-radius:20px;
   text-decoration:none;
   font-weight:600;
 }
 
-/* FLOATING WHATSAPP */
-.whatsapp-float{
+ul{padding-left:18px;}
+details summary{
+  cursor:pointer;
+  font-weight:600;
+  margin-bottom:6px;
+}
+
+footer{
+  background:#0d6efd;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+}
+
+/* Floating WhatsApp */
+.wa-float{
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
   color:#fff;
-  width:60px;
-  height:60px;
+  font-size:26px;
+  padding:14px 16px;
   border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:30px;
   text-decoration:none;
-  box-shadow:0 6px 16px rgba(0,0,0,0.3);
-  z-index:999;
-}
-
-/* FOOTER */
-footer{
-  background:var(--dark);
-  color:#fff;
-  text-align:center;
-  padding:18px;
+  box-shadow:0 4px 10px rgba(0,0,0,.3);
 }
 </style>
 </head>
@@ -137,69 +107,47 @@ footer{
 <body>
 
 <header>
+  <a href="https://wa.me/918638274755" class="top-btn">WhatsApp</a>
   <h1>Digital Seva Kendra</h1>
-  <p>Trusted Online Citizen Services – Guwahati</p>
+  <p>Government & Online Services Assistance – Assam</p>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="pan.html">PAN Card</a>
-  <a href="passport.html">Passport</a>
-  <a href="certificates.html">Certificates</a>
-  <a href="charges.html">Service Charges</a>
-</nav>
+<div class="container">
 
-<section>
-  <div class="section-title">
-    <h2>Our Services</h2>
-    <p>Select a service to continue</p>
+  <h2 class="section-title">Our Services</h2>
+  <div class="grid">
+    <div class="card"><h3>PAN Card</h3><p>New & Correction</p></div>
+    <div class="card"><h3>Passport</h3><p>New / Renewal</p></div>
+    <div class="card"><h3>Birth Certificate</h3></div>
+    <div class="card"><h3>Death Certificate</h3></div>
+    <div class="card"><h3>Income / Caste</h3></div>
+    <div class="card"><h3>Bill Payments</h3></div>
   </div>
 
-  <div class="services">
-    <div class="service-box">
-      <h3>PAN Card Services</h3>
-      <p>New PAN card & corrections.</p>
-      <a href="pan.html">View Options →</a>
-    </div>
-
-    <div class="service-box">
-      <h3>Passport Services</h3>
-      <p>New passport & reissue.</p>
-      <a href="passport.html">View Options →</a>
-    </div>
-
-    <div class="service-box">
-      <h3>Birth / Death Certificates</h3>
-      <p>Apply & correction support.</p>
-      <a href="certificates.html">View Options →</a>
-    </div>
-
-    <div class="service-box">
-      <h3>Service Charges</h3>
-      <p>Transparent pricing.</p>
-      <a href="charges.html">View Charges →</a>
-    </div>
+  <h2 class="section-title">Why Choose Us</h2>
+  <div class="card">
+    <ul>
+      <li>Complete form filling & submission</li>
+      <li>Assam government portal experience</li>
+      <li>Transparent service charges</li>
+      <li>WhatsApp support available</li>
+    </ul>
   </div>
-</section>
 
-<section>
-  <div class="contact">
-    <p><strong>📍 Location:</strong> Guwahati, Assam</p>
-    <p><strong>📞 Phone:</strong> 8638274755</p>
-    <a class="whatsapp" href="https://wa.me/918638274755" target="_blank">
-      Chat on WhatsApp
-    </a>
+  <h2 class="section-title">FAQ</h2>
+  <div class="card">
+    <details><summary>Do I need internet knowledge?</summary><p>No, we handle everything.</p></details>
+    <details><summary>Is WhatsApp support available?</summary><p>Yes.</p></details>
   </div>
-</section>
+
+</div>
 
 <footer>
-  © 2026 Digital Seva Kendra, Guwahati
+  © 2026 Digital Seva Kendra
 </footer>
 
-<!-- FLOATING WHATSAPP BUTTON -->
-<a href="https://wa.me/918638274755" class="whatsapp-float" target="_blank">
-  💬
-</a>
+<a href="https://wa.me/918638274755" class="wa-float">💬</a>
 
 </body>
 </html>
+
