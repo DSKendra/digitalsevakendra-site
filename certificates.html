@@ -3,98 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Certificates | Digital Seva Kendra</title>
+<title>Birth Certificate | Digital Seva Kendra</title>
 
 <style>
-:root{
-  --primary:#0d6efd;
-  --dark:#0b3c78;
-  --light:#f4f7fb;
-}
-
 body{
   margin:0;
-  font-family:Segoe UI, Arial, sans-serif;
-  background:var(--light);
-  color:#333;
+  font-family:Segoe UI, Arial;
+  background:#f4f7fb;
 }
-
-/* HEADER */
 header{
-  background:linear-gradient(135deg, var(--primary), var(--dark));
+  background:#0d6efd;
   color:#fff;
-  padding:50px 20px;
   text-align:center;
+  padding:25px;
 }
-
-/* NAVIGATION */
-nav{
-  background:#fff;
-  box-shadow:0 4px 10px rgba(0,0,0,0.08);
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
 nav a{
-  padding:14px 22px;
+  color:#fff;
   text-decoration:none;
-  color:#333;
+  margin:0 10px;
   font-weight:600;
 }
-
-nav a:hover{
-  color:var(--primary);
-}
-
-/* SECTION */
-section{
+.container{
   max-width:900px;
   margin:auto;
-  padding:40px 20px;
+  padding:30px;
 }
-
 .card{
   background:#fff;
   padding:25px;
-  margin-bottom:25px;
-  border-radius:12px;
-  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  border-radius:15px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.08);
 }
-
-.card h2{
-  color:var(--primary);
-}
-
-.btn{
-  display:inline-block;
-  margin-top:12px;
-  padding:10px 20px;
-  background:var(--primary);
-  color:#fff;
-  text-decoration:none;
-  border-radius:22px;
-  font-weight:600;
-}
-
-.btn:hover{
-  opacity:0.9;
-}
-
-.back{
-  display:inline-block;
-  margin-top:10px;
-  text-decoration:none;
-  color:var(--primary);
-  font-weight:600;
-}
-
-/* FOOTER */
 footer{
-  background:var(--dark);
+  background:#0d6efd;
   color:#fff;
   text-align:center;
-  padding:18px;
+  padding:15px;
+}
+.wa-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  font-size:26px;
+  padding:14px;
+  border-radius:50%;
+  text-decoration:none;
 }
 </style>
 </head>
@@ -102,65 +57,32 @@ footer{
 <body>
 
 <header>
-  <h1>Certificate Services</h1>
-  <p>Digital Seva Kendra – Guwahati</p>
+  <h1>Birth Certificate</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="charges.html">Charges</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="pan.html">PAN Card</a>
-  <a href="passport.html">Passport</a>
-  <a href="certificates.html">Certificates</a>
-  <a href="charges.html">Service Charges</a>
-</nav>
-
-<section>
-
+<div class="container">
   <div class="card">
-    <h2>👶 Birth Certificate</h2>
-    <p>Apply for new birth certificate or correction with full guidance.</p>
+    <h2>Birth Certificate Service</h2>
+    <p><strong>Service Charge:</strong> ₹550</p>
     <p><strong>Required Documents:</strong></p>
     <ul>
-      <li>Hospital Discharge Slip</li>
-      <li>Parents Aadhaar Card</li>
+      <li>Hospital Birth Slip</li>
+      <li>Parents Aadhaar</li>
       <li>Address Proof</li>
     </ul>
-    <a class="btn" href="https://wa.me/918638274755" target="_blank">
-      Apply on WhatsApp
-    </a>
+    <p>We assist in online application & tracking.</p>
   </div>
+</div>
 
-  <div class="card">
-    <h2>⚰️ Death Certificate</h2>
-    <p>Online application & correction support for death certificate.</p>
-    <p><strong>Required Documents:</strong></p>
-    <ul>
-      <li>Hospital / Doctor Certificate</li>
-      <li>Aadhaar Card of Applicant</li>
-      <li>Address Proof</li>
-    </ul>
-    <a class="btn" href="https://wa.me/918638274755" target="_blank">
-      Request Certificate
-    </a>
-  </div>
+<footer>© Digital Seva Kendra, Assam</footer>
 
-  <div class="card">
-    <h2>📄 Other Certificates</h2>
-    <p>
-      Income Certificate, Caste Certificate, Residence Certificate and more.
-    </p>
-    <a class="btn" href="https://wa.me/918638274755" target="_blank">
-      Enquire on WhatsApp
-    </a>
-  </div>
-
-  <a class="back" href="index.html">← Back to Home</a>
-
-</section>
-
-<footer>
-  © 2026 Digital Seva Kendra, Guwahati
-</footer>
+<a href="https://wa.me/918638274755" class="wa-float">💬</a>
 
 </body>
 </html>
+
